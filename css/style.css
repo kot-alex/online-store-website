@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.hidden {
+    position: absolute;
+    left: -999999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #222222;
+    padding: 18px 0;
+    color: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.account-icon {
+    margin: 0 32px;
+}
+
+.promo {
+    background-color: #F1E4E6;
+}
+
+.promo-container {
+    background-image: url(../img/promo-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: -226px;
+    background-position-y: bottom;
+    height: 764px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.promo-heading {
+    width: 41%;
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F;
+}
+
+.promo-heading-brand {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.promo-heading-lux {
+    font-size: 32px;
+}
+
+.promo-heading-fashion {
+    font-size: 32px;
+    color: #F16D7F;
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+}
+
+.categories-card {
+    background-color: #C4C4C4;
+    width: 360px;
+    height: 260px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categories-women {
+    background-image: url(../img/nav-women.png);
+}
+
+.categories-men {
+    background-image: url(../img/nav-men.png);
+}
+
+.categories-kids {
+    background-image: url(../img/nav-kids.png);
+}
+
+.categories-accs {
+    background-image: url(../img/nav-accs.png);
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.categories-text {
+    font-size: 16px;
+}
+
+.categories-big-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F16D7F;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 96px;
+}
+
+.products-heading {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.products-text {
+    font-size: 14px;
+    color: #9F9F9F;
+    margin: 6px auto 48px;
+}
+
+.products-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products-card {
+    background-color: #F8F8F8;
+    width: 360px;
+    margin-bottom: 30px;
+}
+
+.products-card-info {
+    padding: 20px;
+}
+
+.products-card-heading {
+    font-size: 13px;
+    color: #000000;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+.products-card-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-bottom: 18px;
+}
+
+.products-pricetag {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.products-button {
+    padding: 13px 37px;
+    border: 1px solid #FF6A6A;
+    color: #F26376;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 18px;
+}
+
+.products-button:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+}
+
+.benefits {
+    background-color: #222224;
+}
+
+.benefits-container {
+    min-height: 340px;
+    margin-top: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits-item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits-heading {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+.benefits-text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+    text-align: center;
+}
+
+.feedback {
+    background-image: url(../img/feedback-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feedback-container {
+    min-height: 448px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-reviews {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-reviews-text {
+    margin-top: 34px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.feedback-subscribe {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-subscribe-heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #222224;
+}
+
+.feedback-subscribe-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.feedback-subscribe-form {
+    display: flex;
+    margin-top: 32px;
+}
+
+.feedback-subscribe-email {
+    padding: 18px 70px 18px 22px;
+    border: none;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    font-size: 14px;
+    color: #222224;
+    background-color: #E1E1E1;
+    outline: none;
+}
+
+.feedback-subscribe-button {
+    padding: 18px;
+    border: none;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.feedback-subscribe-button:hover {
+    background-color: #2831b9;
+}
+
+.footer {
+    background-color: #222224;
+    padding: 24px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social-link {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    margin-left: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-link:hover {
+    background-color: #F16D7F;
+}
