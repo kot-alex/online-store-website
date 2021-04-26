@@ -14,14 +14,6 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-summary {
-    display: block;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
 .hidden {
     position: absolute;
     left: -999999px;
@@ -226,6 +218,7 @@ summary::-webkit-details-marker {
 .products-button:hover {
     background-color: #F16D7F;
     color: #FFFFFF;
+    fill: #FFFFFF;
 }
 
 .benefits {
@@ -476,6 +469,11 @@ summary::-webkit-details-marker {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+    display: block;
+}
+
+.sorting-title::-webkit-details-marker {
+    display: none;
 }
 
 .sorting-title:hover {
