@@ -1,0 +1,47 @@
+.breadcrumb {
+    background-color: #f8f3f4;
+
+    &-container {
+        height: 148px;
+        @include flex(space-between);
+    }
+
+    &-heading {
+        color: #f16d7f;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &-navigation {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        list-style: none;
+    }
+
+    &-link {
+        display: inline;
+
+        & + li::before {
+            font-weight: 300;
+            color: #636363;
+            content: "/\00a0";
+        }
+
+        & a {
+            color: #636363;
+            text-decoration: none;
+
+            &:hover {
+                color: #f16d7f;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-arrivals a {
+        font-weight: 700;
+        color: #f16d7f;
+    }
+}

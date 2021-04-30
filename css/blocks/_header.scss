@@ -1,0 +1,23 @@
+.header {
+    background-color: #222222;
+    padding: 18px 0;
+    color: #fff;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-link {
+        text-decoration: none;
+    }
+
+    &-logo-icon {
+        margin-right: 40px;
+    }
+
+    &-account-icon {
+        margin: 0 32px;
+    }
+}

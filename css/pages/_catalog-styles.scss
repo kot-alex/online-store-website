@@ -1,0 +1,130 @@
+.filter {
+    padding-top: 51px;
+    display: grid;
+    grid-template-columns: 390px auto;
+
+    &-title {
+        background-color: #ffffff;
+        padding-left: 17px;
+        justify-self: start;
+        box-sizing: border-box;
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &[open] {
+            width: 360px;
+            color: #ef5b70;
+            fill: #ef5b70;
+            box-shadow: $shadow;
+        }
+
+        &-text {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &-icon {
+        padding-left: 12px;
+    }
+
+    &-content {
+        width: 360px;
+        left: 0;
+        position: absolute;
+        overflow: hidden;
+        background-color: #ffffff;
+        box-shadow: $shadow;
+    }
+
+    &-categoty {
+        border-left: 5px solid #ef5b70;
+        border-bottom: 1px solid #ebebeb;
+        padding: 10px;
+        margin: 17px;
+        color: #6f6e6e;
+    }
+}
+
+.sorting {
+    display: flex;
+
+    &-type {
+        position: relative;
+    }
+
+    &-title {
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-icon {
+        padding-left: 11px;
+    }
+
+    &-list {
+        position: absolute;
+        margin-left: -10px;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: $shadow;
+
+        & label {
+            display: block;
+            font-size: 14px;
+            line-height: 16px;
+            color: #6f6e6e;
+        }
+    }
+
+    &-size {
+        padding: 0 30px;
+    }
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65px;
+}
+
+.pagination {
+    display: flex;
+    margin-top: 18px;
+    padding: 6px 9px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+
+    & a {
+        display: flex;
+        align-items: center;
+        padding: 5px 8px;
+        text-decoration: none;
+        color: #ebebeb;
+        transition: 0.3s;
+
+        &.active {
+            color: #f16d7f;
+        }
+
+        &:hover {
+            background-color: #f16d7f;
+            border-radius: 5px;
+            color: #ffffff;
+            fill: #ffffff;
+        }
+    }
+}
