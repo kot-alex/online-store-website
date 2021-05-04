@@ -1,0 +1,88 @@
+.feedback {
+    background-image: url(../img/feedback-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-container {
+        min-height: 448px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-reviews {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-text {
+            margin-top: 34px;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #222224;
+        }
+    }
+
+    &-italic-text {
+        font-size: 20px;
+        line-height: 24px;
+        font-style: italic;
+    }
+
+    &-subscribe {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-heading {
+            font-size: 24px;
+            line-height: 40px;
+            color: #222224;
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        &-form {
+            display: flex;
+            margin-top: 32px;
+        }
+
+        &-email {
+            padding: 16px 70px 16px 22px;
+            border: none;
+            border-top-left-radius: 24px;
+            border-bottom-left-radius: 24px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #222224;
+            background-color: #e1e1e1;
+            outline: none;
+        }
+
+        &-button {
+            padding: 16px 19px;
+            border: none;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #ffffff;
+            background-color: $main-color;
+            transition-duration: 0.4s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #ffffff;
+                color: $main-color;
+            }
+        }
+    }
+}

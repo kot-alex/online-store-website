@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.hidden {
+    position: absolute;
+    left: -999999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.center {
+    padding: 0 calc(50% - 570px);
+}

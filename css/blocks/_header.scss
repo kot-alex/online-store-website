@@ -1,0 +1,35 @@
+.header {
+    background-color: #222222;
+    padding: 18px 0;
+    color: #fff;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-link {
+        display: inline-block;
+        text-decoration: none;
+        transition-duration: 0.5s;
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+
+    &-logo-icon {
+        display: inline-block;
+        margin-right: 40px;
+        transition-duration: 0.5s;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    &-account-icon {
+        margin: 0 32px;
+    }
+}

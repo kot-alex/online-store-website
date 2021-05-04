@@ -1,0 +1,225 @@
+.promo {
+    background-color: #f1e4e6;
+
+    &-container {
+        background-image: url(../img/promo-bg.png);
+        background-repeat: no-repeat;
+        background-position-x: -226px;
+        background-position-y: bottom;
+        height: 764px;
+        @include flex(flex-end);
+    }
+
+    &-heading {
+        width: 41%;
+        padding-left: 16px;
+        border-left: 12px solid $main-color;
+
+        &-brand {
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 58px;
+        }
+
+        &-lux {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+        }
+
+        &-fashion {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+            color: $main-color;
+        }
+    }
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 96px;
+
+    &-card {
+        background-color: #c4c4c4;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 360px;
+        height: 260px;
+        color: #ffffff;
+        @include flex();
+        flex-direction: column;
+        border-radius: 10px;
+        transition-duration: 2s;
+
+        &:hover {
+            transform: rotateY(360deg);
+        }
+    }
+
+    &-women {
+        background-image: url(../img/category-women.png);
+    }
+
+    &-men {
+        background-image: url(../img/category-men.png);
+    }
+
+    &-kids {
+        background-image: url(../img/category-kids.png);
+    }
+
+    &-accs {
+        background-image: url(../img/category-accs.png);
+        width: 100%;
+        height: 180px;
+        margin-top: 30px;
+
+        &:hover {
+            transform: rotateX(360deg);
+            border-radius: 20px;
+        }
+    }
+
+    &-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &-big-text {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        color: $main-color;
+    }
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-heading {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+    }
+
+    &-text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #9f9f9f;
+        margin: 6px auto 48px;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &-card {
+        position: relative;
+        overflow: hidden;
+        background-color: #f8f8f8;
+        width: 360px;
+        margin-bottom: 30px;
+        transition: 0.5s;
+        z-index: 0;
+
+        &:hover {
+            box-shadow: $shadow;
+
+            .products-overlay {
+                opacity: 1;
+            }
+        }
+
+        &-info {
+            padding: 20px;
+        }
+
+        &-heading {
+            font-size: 13px;
+            line-height: 16px;
+            color: #000000;
+            line-height: 16px;
+            font-weight: 400;
+            margin-bottom: 13px;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5d5d5d;
+            margin-bottom: 18px;
+        }
+    }
+
+    &-overlay {
+        position: absolute;
+        @include flex();
+        background-color: rgba(58, 56, 56, 0.86);
+        height: 420px;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: 0.5s;
+
+        &-button {
+            border: 1px solid #ffffff;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            padding: 8px 13px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            fill: #ffffff;
+            cursor: pointer;
+            transition-duration: 0.4s;
+
+            &:hover {
+                background-color: $main-color;
+                border: 1px solid $main-color;
+            }
+        }
+
+        &-icon {
+            margin-right: 11px;
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+    }
+
+    &-pricetag {
+        font-size: 16px;
+        line-height: 19px;
+        color: $main-color;
+    }
+
+    &-button {
+        padding: 13px 37px;
+        border: 1px solid #ff6a6a;
+        color: #f26376;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 18px;
+        transition-duration: 0.4s;
+
+        &:hover {
+            background-color: $main-color;
+            color: #ffffff;
+            fill: #ffffff;
+        }
+    }
+}
