@@ -8,6 +8,7 @@
         background-color: rgba(42, 42, 42, 0.15);
         padding: 11px 17px;
         border: none;
+        transition-duration: 0.4s;
 
         &-left {
             position: absolute;
@@ -20,8 +21,10 @@
         }
 
         &:hover {
-            fill: #f16d7f;
+            fill: $main-color;
             background-color: #ffffff;
+            cursor: pointer;
+            transform: scale(1.2);
         }
     }
 }
@@ -41,7 +44,7 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
-        color: #f16d7f;
+        color: $main-color;
     }
 
     &-top-line {
@@ -99,13 +102,14 @@
         font-size: 16px;
         line-height: 19px;
         text-decoration: none;
+        transition-duration: 0.4s;
 
         &-icon {
             margin-right: 23px;
         }
 
         &:hover {
-            background-color: #f16d7f;
+            background-color: $main-color;
             color: #ffffff;
             fill: #ffffff;
             cursor: pointer;

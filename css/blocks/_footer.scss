@@ -25,9 +25,10 @@
             margin-left: 7px;
             border-radius: 5px;
             @include flex();
+            transition-duration: 0.4s;
 
             &:hover {
-                background-color: #f16d7f;
+                background-color: $main-color;
                 fill: #ffffff;
             }
         }

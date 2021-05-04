@@ -13,7 +13,7 @@
     &-heading {
         width: 41%;
         padding-left: 16px;
-        border-left: 12px solid #f16d7f;
+        border-left: 12px solid $main-color;
 
         &-brand {
             font-size: 48px;
@@ -31,7 +31,7 @@
             font-size: 32px;
             font-weight: 700;
             line-height: 38px;
-            color: #f16d7f;
+            color: $main-color;
         }
     }
 }
@@ -52,6 +52,12 @@
         color: #ffffff;
         @include flex();
         flex-direction: column;
+        border-radius: 10px;
+        transition-duration: 2s;
+
+        &:hover {
+            transform: rotateY(360deg);
+        }
     }
 
     &-women {
@@ -71,6 +77,11 @@
         width: 100%;
         height: 180px;
         margin-top: 30px;
+
+        &:hover {
+            transform: rotateX(360deg);
+            border-radius: 20px;
+        }
     }
 
     &-text {
@@ -82,7 +93,7 @@
         font-size: 24px;
         line-height: 28px;
         font-weight: 700;
-        color: #f16d7f;
+        color: $main-color;
     }
 }
 
@@ -111,11 +122,13 @@
     }
 
     &-card {
+        position: relative;
+        overflow: hidden;
         background-color: #f8f8f8;
         width: 360px;
         margin-bottom: 30px;
-        position: relative;
         transition: 0.5s;
+        z-index: 0;
 
         &:hover {
             box-shadow: $shadow;
@@ -170,6 +183,12 @@
             color: #ffffff;
             fill: #ffffff;
             cursor: pointer;
+            transition-duration: 0.4s;
+
+            &:hover {
+                background-color: $main-color;
+                border: 1px solid $main-color;
+            }
         }
 
         &-icon {
@@ -177,10 +196,14 @@
         }
     }
 
+    &-link {
+        text-decoration: none;
+    }
+
     &-pricetag {
         font-size: 16px;
         line-height: 19px;
-        color: #f16d7f;
+        color: $main-color;
     }
 
     &-button {
@@ -191,9 +214,10 @@
         font-size: 16px;
         line-height: 19px;
         margin-top: 18px;
+        transition-duration: 0.4s;
 
         &:hover {
-            background-color: #f16d7f;
+            background-color: $main-color;
             color: #ffffff;
             fill: #ffffff;
         }

@@ -61,7 +61,7 @@
             border-top-left-radius: 24px;
             border-bottom-left-radius: 24px;
             font-size: 14px;
-            line-height: 17px;
+            line-height: 16px;
             color: #222224;
             background-color: #e1e1e1;
             outline: none;
@@ -73,15 +73,15 @@
             border-top-right-radius: 24px;
             border-bottom-right-radius: 24px;
             font-size: 14px;
-            line-height: 17px;
+            line-height: 16px;
             color: #ffffff;
-            background-color: #f16d7f;
+            background-color: $main-color;
             transition-duration: 0.4s;
             cursor: pointer;
 
             &:hover {
                 background-color: #ffffff;
-                color: #f16d7f;
+                color: $main-color;
             }
         }
     }

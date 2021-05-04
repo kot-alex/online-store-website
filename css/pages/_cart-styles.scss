@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 96px;
+    padding-bottom: 130px;
 
     &-item {
         display: flex;
@@ -35,9 +36,11 @@
             cursor: pointer;
             background-color: transparent;
             border: none;
+            transition-duration: 0.6s;
 
             &:hover {
-                fill: #f16d7f;
+                fill: $main-color;
+                transform: rotate(1080deg);
             }
         }
 
@@ -56,7 +59,7 @@
         }
 
         &-price {
-            color: #f16d7f;
+            color: $main-color;
         }
 
         &-quantity {
@@ -68,9 +71,10 @@
             line-height: 22px;
             color: #656565;
             text-align: center;
+            transition-duration: 0.2s;
 
             &:focus {
-                border: 3px solid #555;
+                border: 1px solid #555;
             }
         }
     }
@@ -89,10 +93,11 @@
             font-size: 14px;
             line-height: 17px;
             cursor: pointer;
+            transition-duration: 0.4s;
 
             &:hover {
-                background-color: #f16d7f;
-                border: 1px solid #f16d74;
+                background-color: $main-color;
+                border: 1px solid $main-color;
                 color: #ffffff;
             }
         }
@@ -106,10 +111,11 @@
             font-size: 14px;
             line-height: 17px;
             cursor: pointer;
+            transition-duration: 0.4s;
 
             &:hover {
-                background-color: #f16d7f;
-                border: 1px solid #f16d74;
+                background-color: $main-color;
+                border: 1px solid $main-color;
                 color: #ffffff;
             }
         }
@@ -137,10 +143,12 @@
             padding: 13px;
             margin-top: 20px;
             outline: none;
+            font-family: inherit;
             font-weight: 300;
             font-size: 14px;
             line-height: 14px;
             color: #222222;
+            transition-duration: 0.2s;
 
             &:focus {
                 border: 1px solid #555;
@@ -158,10 +166,11 @@
             font-size: 11px;
             line-height: 13px;
             cursor: pointer;
+            transition-duration: 0.4s;
 
             &:hover {
-                background-color: #f16d7f;
-                border: 1px solid #f16d74;
+                background-color: $main-color;
+                border: 1px solid $main-color;
                 color: #ffffff;
             }
         }
@@ -196,7 +205,7 @@
         &-bigprice {
             margin-left: 26px;
             font-weight: 700;
-            color: #f16d7f;
+            color: $main-color;
         }
 
         &-line {
@@ -209,9 +218,9 @@
         &-proceed {
             margin-top: 17px;
             padding: 15px 37px;
-            border: 1px solid #f16d74;
+            border: 1px solid $main-color;
             color: #ffffff;
-            background-color: #f16d7f;
+            background-color: $main-color;
             text-decoration: none;
             font-weight: 300;
             font-size: 16px;
@@ -220,14 +229,10 @@
             transition-duration: 0.4s;
 
             &:hover {
-                border: 1px solid #f16d7f;
+                border: 1px solid $main-color;
                 background-color: #ffffff;
-                color: #f16d7f;
+                color: $main-color;
             }
         }
-    }
-
-    &-feedback {
-        margin-top: 130px;
     }
 }
