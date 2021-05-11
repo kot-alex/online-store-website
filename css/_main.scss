@@ -14,6 +14,16 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
 .hidden {
     position: absolute;
     left: -999999px;
@@ -27,26 +37,37 @@ body {
     margin: 0 auto;
 }
 
+/* 
+// Centering using padding
 .center {
     padding: 0 calc(50% - 570px);
 }
 
+// Adaptive design
+// tablet
 @media (max-width: 1180px) {
-    .center {
-        padding: 0 calc(50% - 368px);
-    }
-
     .container {
         max-width: 736px;
     }
 }
 
+// mobile
 @media (max-width: 768px) {
-    .center {
-        padding: 0 calc(50% - 172px);
-    }
-
     .container {
         max-width: 344px;
+    }
+} 
+*/
+
+// Responsive design
+@media (max-width: 1192px /* 1140 + 20 + 16*2 */) {
+    .container {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 788px /* 768 + 20 */) {
+    .container {
+        padding: 0 8px;
     }
 }

@@ -83,8 +83,7 @@
     }
 
     &-bottom-line {
-        width: 100%;
-        max-width: 641px;
+        width: 641px;
         height: 1px;
         border-width: 0;
         background-color: #eaeaea;
@@ -118,6 +117,96 @@
     }
 }
 
+.items {
+    .products {
+        &-card {
+            &:nth-child(2) {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
 .product-feedback {
     margin-top: 100px;
+}
+
+@media (max-width: 1192px) {
+    .sorting {
+        &-type {
+            &-size {
+                padding: 0 24px;
+            }
+        }
+    }
+    .items {
+        .products {
+            &-items {
+                flex-direction: row-reverse;
+            }
+            &-card {
+                &:nth-child(1) {
+                    margin-right: 0px;
+                }
+                &:nth-child(2) {
+                    margin-right: 15px;
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .product-feedback {
+        margin-top: 115px;
+    }
+}
+
+@media (max-width: 788px) {
+    .description {
+        margin-bottom: 64px;
+        &-text {
+            padding: 0 25px;
+            line-height: 20px;
+        }
+
+        &-bottom-line {
+            width: 175px;
+            margin-top: 32px;
+            margin-bottom: 50px;
+        }
+
+        .sorting {
+            &-type {
+                &-size {
+                    padding: 0 23px;
+                }
+            }
+            &-title {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+    .items {
+        .products {
+            &-items {
+                flex-direction: row-reverse;
+            }
+            &-card {
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:nth-child(3) {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .product-feedback {
+        margin-top: 50px;
+    }
 }
