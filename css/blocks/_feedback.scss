@@ -5,10 +5,7 @@
 
     &-container {
         min-height: 448px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(space-between);
     }
 
     &-reviews {
@@ -39,12 +36,14 @@
         align-items: center;
 
         &-heading {
+            font-weight: 700;
             font-size: 24px;
             line-height: 40px;
             color: #222224;
         }
 
         &-text {
+            font-weight: 400;
             font-size: 18px;
             line-height: 30px;
             text-align: center;
@@ -83,6 +82,16 @@
                 background-color: #ffffff;
                 color: $main-color;
             }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .feedback {
+        &-container {
+            min-height: 693px;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
     }
 }

@@ -33,14 +33,14 @@
 
         &-delete {
             fill: #575757;
-            cursor: pointer;
             background-color: transparent;
             border: none;
             transition-duration: 0.6s;
 
             &:hover {
                 fill: $main-color;
-                transform: rotate(1080deg);
+                cursor: pointer;
+                transform: rotate(360deg);
             }
         }
 

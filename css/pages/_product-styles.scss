@@ -3,6 +3,7 @@
     background-color: #f7f7f7;
     padding-bottom: 64px;
     @include flex();
+    z-index: 0;
 
     &-button {
         background-color: rgba(42, 42, 42, 0.15);

@@ -28,6 +28,10 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 17px;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 
@@ -47,6 +51,10 @@
             border-bottom: 1px solid #ebebeb;
             padding: 10px;
             margin: 17px 17px 17px 0;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         &-list {
@@ -71,13 +79,21 @@
 
 .sorting {
     display: flex;
-    position: relative;
     z-index: 1;
+
+    &-type {
+        position: relative;
+    }
+
+    &-toggle {
+        display: none;
+    }
 
     &-title {
         font-size: 14px;
         line-height: 17px;
         color: #6f6e6e;
+        margin-right: 30px;
 
         &:hover {
             cursor: pointer;
@@ -85,31 +101,54 @@
     }
 
     &-icon {
-        padding-left: 11px;
+        padding-left: 10px;
     }
 
     &-list {
-        box-sizing: border-box;
-        width: 80px;
+        display: block;
         position: absolute;
+        box-sizing: border-box;
+        width: 95%;
         margin-left: -10px;
         margin-top: 5px;
-        padding: 0 10px;
+        padding: 5px 10px 10px;
         background-color: #ffffff;
         box-shadow: $shadow;
+        border-radius: 2px;
+        transform: scale(0);
+        transition-duration: 0.3s;
+        transform-origin: top left;
 
-        & label {
-            padding: 5px 0;
-            display: block;
+        & input {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &-value {
+            padding: 5px;
+            font-weight: 400;
             font-size: 14px;
             line-height: 16px;
             color: #6f6e6e;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
+}
 
-    &-size {
-        padding: 0 30px;
-    }
+#sorting-toggle-trend:checked ~ .sorting-trend {
+    transform: scale(1);
+}
+
+#sorting-toggle-size:checked ~ .sorting-size {
+    transform: scale(1);
+}
+
+#sorting-toggle-price:checked ~ .sorting-price {
+    transform: scale(1);
 }
 
 .catalog {
