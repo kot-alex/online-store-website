@@ -46,3 +46,17 @@
         color: $main-color;
     }
 }
+
+@media (max-width: 788px) {
+    .breadcrumb {
+        &-container {
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        &-navigation {
+            padding-left: 0;
+            padding-bottom: 10px;
+        }
+    }
+}
