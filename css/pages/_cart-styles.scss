@@ -4,27 +4,32 @@
     padding-top: 96px;
     padding-bottom: 130px;
 
+    &-items {
+        width: 57.2%;
+    }
+
     &-item {
         display: flex;
         box-shadow: $shadow-2;
         margin-bottom: 40px;
 
         &-image {
-            width: 262px;
+            display: flex;
         }
 
         &-description {
-            width: 390px;
-            padding: 22px 31px;
-            box-sizing: border-box;
+            width: 100%;
+            padding: 28px 30px;
 
             &-top {
-                @include flex(space-between, flex-start);
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
             }
         }
 
         &-title {
-            width: 200px;
+            max-width: 210px;
             font-weight: 400;
             font-size: 24px;
             line-height: 29px;
@@ -51,7 +56,7 @@
             font-size: 22px;
             line-height: 26px;
             color: #575757;
-            margin-top: 42px;
+            margin-top: 40px;
 
             & li {
                 padding: 3px 0;
@@ -92,6 +97,7 @@
             font-weight: 300;
             font-size: 14px;
             line-height: 17px;
+            text-transform: uppercase;
             cursor: pointer;
             transition-duration: 0.4s;
 
@@ -110,6 +116,7 @@
             font-weight: 300;
             font-size: 14px;
             line-height: 17px;
+            text-transform: uppercase;
             cursor: pointer;
             transition-duration: 0.4s;
 
@@ -122,26 +129,28 @@
     }
 
     &-checkout {
-        width: 360px;
+        margin-top: 20px;
+        width: 31.6%;
+        box-sizing: border-box;
     }
 
     &-form {
-        margin-bottom: 57px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
         &-heading {
-            margin-top: 20px;
             font-weight: 300;
             font-size: 16px;
             line-height: 19px;
             color: #222222;
+            margin-bottom: 20px;
         }
 
         &-info {
-            box-sizing: border-box;
-            width: 100%;
             border: 1px solid #a4a4a4;
             padding: 13px;
-            margin-top: 20px;
+            margin-bottom: 20px;
             outline: none;
             font-family: inherit;
             font-weight: 300;
@@ -156,7 +165,7 @@
         }
 
         &-submit {
-            margin-top: 20px;
+            width: fit-content;
             padding: 10px 14px;
             background-color: #ffffff;
             color: #4a4a4a;
@@ -165,6 +174,7 @@
             font-weight: 300;
             font-size: 11px;
             line-height: 13px;
+            text-transform: uppercase;
             cursor: pointer;
             transition-duration: 0.4s;
 
@@ -176,12 +186,18 @@
         }
     }
 
+    &-box {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
     &-sum {
+        background-color: #f5f3f3;
+        margin-top: 57px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
-        background-color: #f5f3f3;
-        padding: 43px;
-        text-align: end;
+        align-items: flex-end;
 
         &-text {
             font-weight: 400;
@@ -209,6 +225,7 @@
         }
 
         &-line {
+            width: 100%;
             margin-top: 21px;
             height: 1px;
             border-width: 0;
@@ -216,8 +233,9 @@
         }
 
         &-proceed {
+            align-self: center;
             margin-top: 17px;
-            padding: 15px 37px;
+            padding: 15px 40px;
             border: 1px solid $main-color;
             color: #ffffff;
             background-color: $main-color;
@@ -233,6 +251,120 @@
                 background-color: #ffffff;
                 color: $main-color;
             }
+        }
+    }
+}
+
+@media (max-width: 1192px) {
+    .cart {
+        padding-top: 60px;
+        flex-direction: column;
+
+        &-items {
+            width: 100%;
+        }
+
+        &-actions {
+            justify-content: center;
+
+            &-clear {
+                margin-right: 50px;
+            }
+        }
+
+        &-checkout {
+            margin-top: 64px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-self: flex-end;
+        }
+
+        &-form {
+            margin-right: 15px;
+        }
+
+        &-sum {
+            margin-top: 38px;
+        }
+    }
+}
+
+@media (max-width: 788px) {
+    .cart {
+        padding-top: 40px;
+        padding-bottom: 96px;
+
+        &-item {
+            margin-bottom: 32px;
+
+            &-description {
+                padding: 15px 17px;
+            }
+
+            &-title {
+                max-width: 140px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &-delete svg {
+                width: 11px;
+                height: 11px;
+            }
+
+            &-text {
+                font-size: 14px;
+                line-height: 18px;
+                margin-top: 24px;
+
+                & li {
+                    padding: 1px 0;
+                }
+            }
+
+            &-quantity {
+                margin-left: 25px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        &-actions {
+            margin-top: 30px;
+
+            &-clear {
+                padding: 9px 34px;
+                font-size: 12px;
+                line-height: 14px;
+                margin-right: 10px;
+                text-transform: none;
+            }
+
+            &-continue {
+                padding: 9px 35px;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: none;
+            }
+        }
+
+        &-checkout {
+            margin-top: 48px;
+            flex-direction: column;
+        }
+
+        &-form {
+            margin-right: 0;
+
+            &-submit {
+                text-transform: none;
+            }
+        }
+
+        &-sum {
+            margin-top: 48px;
         }
     }
 }
